@@ -37,9 +37,10 @@ jobs:
           name: "Generate App key"
           command: php artisan key:generate
 
-      - run:
-          name: "Install sqlite"
-          command: sudo apt install php8.2-sqlite3
+      # - run:
+      #     name: "Install sqlite"
+      #     # command: sudo apt install php8.2-sqlite3
+      #     command: sudo docker-php-ext-install
 
       - run:
           name: "Create database and run migrations"
