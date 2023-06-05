@@ -9,8 +9,8 @@ jobs:
     working_directory: ~/laravel
 
     steps:
-      - browser-tools/install-browser-tools
       - checkout
+      - browser-tools/install-browser-tools
 
       - run:
           name: "Create environment file and generate app key"
