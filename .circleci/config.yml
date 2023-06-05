@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
       - image: cimg/php:8.2-browsers
-    working_directory: ~/laravel
+    working_directory: /home/circleci/laravel
 
     steps:
       - browser-tools/install-browser-tools
