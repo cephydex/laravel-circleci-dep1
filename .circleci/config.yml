@@ -52,7 +52,7 @@ jobs:
           name: "Generate Passport encryption keys"
           command: php artisan passport:install
 
-      # run test with phpunit
+      # run test with phpunit here
       - run:
           name: "run test"
           command: php artisan test
